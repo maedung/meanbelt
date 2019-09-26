@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="detail_container">
+    <h1>Product Details</h1>
+    <p>{{ errors }}</p>
+
+    <h3 class="col-sm-4">Name</h3>
+    <span class="col-sm-6">{{oneproduct.name}}</span>
+    <h3 class="col-sm-4">Qty</h3>
+    <span class="col-sm-6">{{oneproduct.qty}}</span>
+    <h3 class="col-sm-4">Price</h3>
+    <span class="col-sm-6">${{oneproduct.price}}</span>
+    <br>
+    <button [routerLink]="['/products']" class="back btn btn-secondary">Back</button>
+    <button (click)="deleteproduct()" class="delete btn btn-danger">Delete</button>
+</div>

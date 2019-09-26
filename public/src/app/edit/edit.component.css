@@ -1,0 +1,16 @@
+.edit_container{
+    border: 1px solid black;
+    width: 900px;
+    min-height: 300px;
+    margin-top: 30px;
+    padding: 20px;
+}
+.reset{
+    margin-left: 170px;
+}
+.update{
+    margin-left: 10px;
+}
+p{
+    color:red;
+}
